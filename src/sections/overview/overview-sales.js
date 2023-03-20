@@ -24,7 +24,7 @@ const useChartOptions = () => {
         show: false
       }
     },
-    colors: [theme.palette.primary.main, alpha(theme.palette.primary.main, 0.25)],
+    colors: ['#002D62', '#EB6E1F'],
     dataLabels: {
       enabled: false
     },
@@ -72,18 +72,14 @@ const useChartOptions = () => {
         show: true
       },
       categories: [
-        'Jan',
-        'Feb',
-        'Mar',
-        'Apr',
-        'May',
-        'Jun',
-        'Jul',
-        'Aug',
-        'Sep',
-        'Oct',
-        'Nov',
-        'Dec'
+        '1st',
+        '2nd',
+        '3rd',
+        '4th',
+        '5th',
+        '6th',
+        '7th',
+        '8th',
       ],
       labels: {
         offsetY: 5,
@@ -94,7 +90,6 @@ const useChartOptions = () => {
     },
     yaxis: {
       labels: {
-        formatter: (value) => (value > 0 ? `${value}K` : `${value}`),
         offsetX: -10,
         style: {
           colors: theme.palette.text.secondary
@@ -124,7 +119,7 @@ export const OverviewSales = (props) => {
             Sync
           </Button>
         )}
-        title="Sales"
+        title="ERA Comparison"
       />
       <CardContent>
         <Chart

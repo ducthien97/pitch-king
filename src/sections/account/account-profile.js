@@ -10,11 +10,11 @@ import {
 } from '@mui/material';
 
 const user = {
-  avatar: '/assets/avatars/avatar-anika-visser.png',
+  avatar: '/assets/avatars/dusty.jpg',
   city: 'Los Angeles',
   country: 'USA',
   jobTitle: 'Senior Developer',
-  name: 'Anika Visser',
+  name: 'Dusty Baker',
   timezone: 'GTM-7'
 };
 

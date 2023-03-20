@@ -17,7 +17,7 @@ const Page = () => (
   <>
     <Head>
       <title>
-        Overview | Devias Kit
+        Overview | Pitch King
       </title>
     </Head>
     <Box
@@ -38,10 +38,10 @@ const Page = () => (
             lg={3}
           >
             <OverviewBudget
-              difference={12}
+              difference={13}
               positive
               sx={{ height: '100%' }}
-              value="$24k"
+              value="14"
             />
           </Grid>
           <Grid
@@ -53,7 +53,7 @@ const Page = () => (
               difference={16}
               positive={false}
               sx={{ height: '100%' }}
-              value="1.6k"
+              value="750"
             />
           </Grid>
           <Grid
@@ -73,7 +73,7 @@ const Page = () => (
           >
             <OverviewTotalProfit
               sx={{ height: '100%' }}
-              value="$15k"
+              value="37"
             />
           </Grid>
           <Grid
@@ -83,12 +83,12 @@ const Page = () => (
             <OverviewSales
               chartSeries={[
                 {
-                  name: 'This year',
-                  data: [18, 16, 5, 8, 3, 14, 14, 16, 17, 19, 18, 20]
+                  name: 'This Game',
+                  data: [1.8, 1.6, 5, 8, 3, 1.4, 1.4, 1.6]
                 },
                 {
-                  name: 'Last year',
-                  data: [12, 11, 4, 6, 2, 9, 9, 10, 11, 12, 13, 13]
+                  name: 'Last Game',
+                  data: [1.2, 1.1, 7.4, 2.6, 4.2, 3.9, 5.9, 1]
                 }
               ]}
               sx={{ height: '100%' }}
@@ -101,7 +101,7 @@ const Page = () => (
           >
             <OverviewTraffic
               chartSeries={[63, 15, 22]}
-              labels={['Desktop', 'Tablet', 'Phone']}
+              labels={['Fastball', 'Slider', 'Curveball']}
               sx={{ height: '100%' }}
             />
           </Grid>
@@ -114,32 +114,32 @@ const Page = () => (
               products={[
                 {
                   id: '5ece2c077e39da27658aa8a9',
-                  image: '/assets/products/product-1.png',
-                  name: 'Healthcare Erbology',
+                  image: '/assets/products/JS.jpg',
+                  name: 'Juan Soto',
                   updatedAt: subHours(now, 6).getTime()
                 },
                 {
                   id: '5ece2c0d16f70bff2cf86cd8',
-                  image: '/assets/products/product-2.png',
-                  name: 'Makeup Lancome Rouge',
+                  image: '/assets/products/BB.jpg',
+                  name: 'Bo Bichette',
                   updatedAt: subDays(subHours(now, 8), 2).getTime()
                 },
                 {
                   id: 'b393ce1b09c1254c3a92c827',
-                  image: '/assets/products/product-5.png',
-                  name: 'Skincare Soja CO',
+                  image: '/assets/products/CB.jpg',
+                  name: 'Cavan Bigio',
                   updatedAt: subDays(subHours(now, 1), 1).getTime()
                 },
                 {
                   id: 'a6ede15670da63f49f752c89',
-                  image: '/assets/products/product-6.png',
-                  name: 'Makeup Lipstick',
+                  image: '/assets/products/TT.jpg',
+                  name: 'Trea Turner',
                   updatedAt: subDays(subHours(now, 3), 3).getTime()
                 },
                 {
                   id: 'bcad5524fe3a2f8f8620ceda',
-                  image: '/assets/products/product-7.png',
-                  name: 'Healthcare Ritual',
+                  image: '/assets/products/MT.jpg',
+                  name: 'Mike Trout',
                   updatedAt: subDays(subHours(now, 5), 6).getTime()
                 }
               ]}
@@ -155,63 +155,63 @@ const Page = () => (
               orders={[
                 {
                   id: 'f69f88012978187a6c12897f',
-                  ref: 'DEV1049',
-                  amount: 30.5,
+                  pitchType: 'sld',
+                  velocity: 30.5,
                   customer: {
                     name: 'Ekaterina Tankova'
                   },
                   createdAt: 1555016400000,
-                  status: 'pending'
+                  status: 'strike'
                 },
                 {
                   id: '9eaa1c7dd4433f413c308ce2',
-                  ref: 'DEV1048',
-                  amount: 25.1,
+                  pitchType: 'fsfb',
+                  velocity: 25.1,
                   customer: {
                     name: 'Cao Yu'
                   },
                   createdAt: 1555016400000,
-                  status: 'delivered'
+                  status: 'hitByPitch'
                 },
                 {
                   id: '01a5230c811bd04996ce7c13',
-                  ref: 'DEV1047',
-                  amount: 10.99,
+                  pitchType: 'tsfb',
+                  velocity: 10.99,
                   customer: {
                     name: 'Alexa Richardson'
                   },
                   createdAt: 1554930000000,
-                  status: 'refunded'
+                  status: 'foul'
                 },
                 {
                   id: '1f4e1bd0a87cea23cdb83d18',
-                  ref: 'DEV1046',
-                  amount: 96.43,
+                  pitchType: 'cvb',
+                  velocity: 96.43,
                   customer: {
                     name: 'Anje Keizer'
                   },
                   createdAt: 1554757200000,
-                  status: 'pending'
+                  status: 'ball'
                 },
                 {
                   id: '9f974f239d29ede969367103',
-                  ref: 'DEV1045',
-                  amount: 32.54,
+                  pitchType: 'sld',
+                  velocity: 32.54,
                   customer: {
                     name: 'Clarke Gillebert'
                   },
                   createdAt: 1554670800000,
-                  status: 'delivered'
+                  status: 'hit'
                 },
                 {
                   id: 'ffc83c1560ec2f66a1c05596',
-                  ref: 'DEV1044',
-                  amount: 16.76,
+                  pitchType: 'fsfb',
+                  velocity: 16.76,
                   customer: {
                     name: 'Adam Denisov'
                   },
                   createdAt: 1554670800000,
-                  status: 'delivered'
+                  status: 'strike'
                 }
               ]}
               sx={{ height: '100%' }}

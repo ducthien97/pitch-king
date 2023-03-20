@@ -61,13 +61,13 @@ const data = [
     address: {
       city: 'Madrid',
       country: 'Spain',
-      name: 'Anika Visser',
+      name: 'Dusty Baker',
       street: '4158  Hedge Street'
     },
-    avatar: '/assets/avatars/avatar-anika-visser.png',
+    avatar: '/assets/avatars/dusty.jpg',
     createdAt: subDays(subHours(now, 11), 2).getTime(),
-    email: 'anika.visser@devias.io',
-    name: 'Anika Visser',
+    email: 'dusty.baker@astros.com',
+    name: 'Dusty Baker',
     phone: '908-691-3242'
   },
   {
@@ -199,7 +199,7 @@ const Page = () => {
     <>
       <Head>
         <title>
-          Customers | Devias Kit
+          Customers | Pitch King
         </title>
       </Head>
       <Box

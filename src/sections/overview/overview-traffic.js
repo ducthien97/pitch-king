@@ -63,17 +63,17 @@ const useChartOptions = (labels) => {
 };
 
 const iconMap = {
-  Desktop: (
+  Fastball: (
     <SvgIcon>
       <ComputerDesktopIcon />
     </SvgIcon>
   ),
-  Tablet: (
+  Slider: (
     <SvgIcon>
       <DeviceTabletIcon />
     </SvgIcon>
   ),
-  Phone: (
+  Curveball: (
     <SvgIcon>
       <PhoneIcon />
     </SvgIcon>
@@ -86,7 +86,7 @@ export const OverviewTraffic = (props) => {
 
   return (
     <Card sx={sx}>
-      <CardHeader title="Traffic Source" />
+      <CardHeader title="Pitch Combination" />
       <CardContent>
         <Chart
           height={300}
@@ -114,7 +114,6 @@ export const OverviewTraffic = (props) => {
                   alignItems: 'center'
                 }}
               >
-                {iconMap[label]}
                 <Typography
                   sx={{ my: 1 }}
                   variant="h6"
